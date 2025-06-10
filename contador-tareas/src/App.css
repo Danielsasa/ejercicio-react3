@@ -1,0 +1,54 @@
+/* App.css */
+.contenedor {
+  max-width: 500px;
+  margin: 30px auto;
+  background: #f7f7f7;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0001;
+  font-family: Arial, sans-serif;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+.contenedor.oscuro {
+  background: #23272f;
+  color: #f7f7f7;
+}
+.formulario input, .formulario button, .filtros input {
+  margin: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.formulario button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.formulario button:hover {
+  background: #1565c0;
+}
+.filtros {
+  margin: 1rem 0;
+}
+.nombre-tarea {
+  font-weight: bold;
+}
+.duracion-tarea {
+  color: #1976d2;
+}
+.boton-modo {
+  float: right;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+}
+.contenedor.oscuro .boton-modo {
+  background: #f7f7f7;
+  color: #23272f;
+}
