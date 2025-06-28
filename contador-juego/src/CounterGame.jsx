@@ -23,7 +23,7 @@ function reducer(state, action) {
     case "reset":
       return initialState;
     case "undo":
-      if (state.history.length === 0) return state;
+      { if (state.history.length === 0) return state;
       // Obtener el historial anterior
       const prevHistory = state.history.slice(0, -1);
       // Calcular el valor anterior del contador
@@ -36,7 +36,7 @@ function reducer(state, action) {
       return {
         count: prevCount,
         history: prevHistory
-      };
+      }; }
     case "setHistory":
       // Para inicializar desde localStorage
       return {
